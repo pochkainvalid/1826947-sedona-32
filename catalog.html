@@ -145,15 +145,30 @@
          <option value="expensive">Сначала дорогие</option>
          <option value="popular">Сначала популярные</option>
        </select>
+
        <button class="visually-hidden" type="submit">Отсортировать места проживания</button>
        </form>
-       <a href="#" class="button button-light">
-         <span class="visually-hidden">Показать список</span>
-       </a>
-       <a href="#" class="button">
-         <span class="visually-hidden">Показать карточки</span>
-       </a>
-      <!--Не могу сообразить, как показать рейтинг и звёздочки для мест проживания-->
+       <ul class="sorting-list">
+        <li class="sorting-item">
+          <label class="sorting">
+            <input class="visually-hidden sorting-input" type="radio" name="soring-group" value="icons">
+        <span class="visually-hidden sorting-label">Значки</span>
+          </label>
+        </li>
+        <li class="sorting-item">
+          <label class="sorting">
+            <input class="visually-hidden sorting-input" type="radio" name="soring-group" value="icons-with-a-signature" >
+        <span class="visually-hidden sorting-label">Знаки с подписью</span>
+          </label>
+        </li>
+        <li class="sorting-item">
+          <label class="sorting">
+            <input class="visually-hidden sorting-input" type="radio" name="soring-group" value="list" checked>
+        <span class="visually-hidden sorting-label">Список</span>
+          </label>
+        </li>
+      </ul>
+      <!--Не могу сообразить, как показать звёздочки для мест проживания-->
        <div class="livingarea-card">
          <a class="livingarea-link" href="product.html">
            <img class="livingarea-card-image" scr="" alt="Гостиница Amara Resort & Spa">
@@ -163,6 +178,7 @@
          <b class="livingarea-card-price">от 4000 ₽</b>
          <a href="#" class="livingarea-card-button button">подробнее</a>
          <a href="#" class="livingarea-card-button button">в избранное</a>
+         <p class="livingarea-card-rating">рейтинг 8,5</p>
         </div>
         <ul class="livingarea-list">
          <li class="livingarea-card">
@@ -174,6 +190,7 @@
           <b class="livingarea-card-price">от 3000 ₽</b>
           <a href="#" class="livingarea-card-button button">подробнее</a>
           <a href="#" class="livingarea-card-button button">в избранное</a>
+          <p class="livingarea-card-rating">рейтинг 8,9</p>
          </li>
       <li class="livingarea-card">
           <a class="livingarea-link" href="product.html">
@@ -184,6 +201,7 @@
           <b class="livingarea-card-price">от 2000 ₽</b>
           <a href="#" class="livingarea-card-button button">подробнее</a>
           <a href="#" class="livingarea-card-button button">в избранное</a>
+          <p class="livingarea-card-rating">рейтинг 9,2</p>
          </li>
          <li class="livingarea-card">
           <a class="livingarea-link" href="product.html">
@@ -194,6 +212,7 @@
           <b class="livingarea-card-price">от 3000 ₽</b>
           <a href="#" class="livingarea-card-button button">подробнее</a>
           <a href="#" class="livingarea-card-button button">в избранное</a>
+          <p class="livingarea-card-rating">рейтинг 9,2</p>
          </li>
         </ul>
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
@@ -217,19 +236,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link visually-hidden" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link visually-hidden" href="#">6</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link visually-hidden" href="#">7</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link visually-hidden" href="#">8</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link visually-hidden" href="#">9</a>
+            <a class="pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
