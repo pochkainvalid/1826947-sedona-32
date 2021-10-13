@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "PT Sans" ;
+    font-style: normal;
+    font-weight: 400;
+
+    scr: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+
+    font-display: swap;
+  }
+
+ body{
+      font-family: "PT Sans", sans-serif;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333333;
+      background-color: #ffffff;
+  }
+
+  .navigation-header{
+     font-size: 20px;
+     line-height: 25px; 
+     color: inherit;
+     background-color: inherit;
+     text-decoration: none;
+  }
+
+  .navigation-link:nth-child(5){
+      background-color: #756257;
+      font-size: 16px;
+      color:  #FFFFFF;
+  }
+
+  .title{
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase; 
+  }
+  .title-discription{
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .attraction-item{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase; 
+  }
+  .attraction-item:nth-child(1),
+  .attraction-item:nth-child(2){
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-align: center;
+    text-transform: uppercase; 
+  }
+
+  .attraction-discription{
+    text-align: center;
+  }
+
+.attraction-discription:nth-child(1),
+.attraction-discription:nth-child(2){
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-align: center;
+}  
+
+.advantages-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.interect-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.interect-discription{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.search-table{
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.footer-mailing-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-mailing-discription{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subscribe{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.contact-phone{
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inner-header{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;   
+}
+
+.breanchcrumbs-link{
+    font-size: 16px;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.catalog-filter-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.control-label{
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.catalog-filter-title{font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.button{
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #83B3D3;
+    border-radius: 4px;   
+}
+
+.button:nth-child(2){
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    border-radius: none;
+}
+
+.button:nth-child(3){
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.select-control{
+    line-height: 23px;
+}
+
+.livingarea-card-title{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 31px;
+}
+
+.livingarea-card-info,
+.livingarea-card-price{
+    line-height: 31px;
+}
+
+.livingarea-card-rating{
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
