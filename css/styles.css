@@ -32,7 +32,7 @@
      text-decoration: none;
   }
 
-  .navigation-link:nth-child(5){
+  .navigation-link .want-here{
       background-color: #756257;
       font-size: 16px;
       color:  #FFFFFF;
@@ -57,8 +57,8 @@
     text-align: center;
     text-transform: uppercase; 
   }
-  .attraction-item:nth-child(1),
-  .attraction-item:nth-child(2){
+  .attraction-item .real-city,
+  .attraction-item .devil-bridge{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -72,8 +72,8 @@
     text-align: center;
   }
 
-.attraction-discription:nth-child(1),
-.attraction-discription:nth-child(2){
+.attraction-discription .real-city,
+.attraction-discription .devil-bridge{
     color: #FFFFFF;
     background-color: #83B3D3;
     text-align: center;
@@ -175,7 +175,9 @@
     color: #FFFFFF;
 }
 
-.button{
+.button .apply,
+.button .cancel,
+.button .pagination-show-more{
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
@@ -184,7 +186,7 @@
     border-radius: 4px;   
 }
 
-.button:nth-child(2){
+.button .cancel{
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -192,7 +194,7 @@
     border-radius: none;
 }
 
-.button:nth-child(3){
+.button .pagination-show-more{
     font-size: 20px;
     line-height: 26px;
 }
