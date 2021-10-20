@@ -16,12 +16,23 @@
     font-display: swap;
   }
 
+ html{
+    height: 100%;
+ }
  body{
-      font-family: "PT Sans", sans-serif;
-      font-size: 18px;
-      line-height: 21px;
-      color: #333333;
-      background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0; 
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #ffffff;
+  }
+
+  .main-container{
+     flex-grow: 1;
   }
 
   .navigation-header{
@@ -32,12 +43,37 @@
      text-decoration: none;
   }
 
-  .navigation-link .want-here{
-      background-color: #756257;
-      font-size: 16px;
-      color:  #FFFFFF;
+  .navigation{
+     display: flex;
+     justify-content: space-between;
+     width: 1200px;   
+     margin: 0 auto;  
   }
 
+   .navigation-list {
+     width: 340px;  
+     margin: 0;
+     padding: 0;
+  }
+
+   .navigation-user {
+     max-width: 250px;
+     margin-left: auto;
+  }
+
+   .page-container {
+     width: 1200px;
+     margin: 0 auto;
+  }
+
+  .navigation-link .want-here{
+      font-size: 16px;
+      color: #FFFFFF;
+      background-color: #756257;
+  }
+
+  /*Правильно понимаю, что для Welcome to Sedona фото каньона лучше прописать здесь, а не в index.htiml?*/
+  
   .title{
       font-weight: 700;
       font-size: 30px;
@@ -45,18 +81,31 @@
       text-align: center;
       text-transform: uppercase; 
   }
+
   .title-discription{
     font-size: 22px;
     line-height: 36px;
     text-align: center;
   }
+
+   .attraction-list{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+  }
+
   .attraction-item{
+    width: 800;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase; 
   }
+  /* Не понимаю, как у 1 и 3 преимущества отцентрировать фото. Через 2fr 1fr?  */
+
   .attraction-item .real-city,
   .attraction-item .devil-bridge{
     font-weight: 700;
@@ -87,6 +136,12 @@
     text-transform: uppercase; 
 }
 
+.search{
+ display: flex;
+ justify-content: center;
+ width: 720px;  
+}
+
 .interect-title{
     font-weight: 700;
     font-size: 30px;
@@ -105,10 +160,21 @@
     font-size: 20px;
     line-height: 36px;
     text-align: center;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
-.footer-mailing-title{
+.page-footer-container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.page-footer-mailing{
+ width: 70px;
+ margin-right: 40px;
+}
+
+.page-footer-mailing-title{
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -117,11 +183,20 @@
     color: #FFFFFF;
 }
 
-.footer-mailing-discription{
+.page-footer-mailing-discription{
     font-size: 22px;
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.page-fotter-contact{
+    width: 720px;
+}
+
+.page-footer-developer{
+    margin-left: 53px;
+    max-width: 115px;
 }
 
 .subscribe{
