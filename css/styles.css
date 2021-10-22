@@ -230,6 +230,15 @@
     text-decoration: none;
 }
 
+.catalog-products{
+    display: flex;
+}
+
+..catalog-filter{
+    width: 287px;
+    margin-right: 68PX;
+}
+
 .catalog-filter-title{
     font-weight: 700;
     font-size: 20px;
@@ -237,6 +246,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.catalog-bottom-column{
+    width: 1056px;
 }
 
 .control-label{
