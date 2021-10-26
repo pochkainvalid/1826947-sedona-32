@@ -1,18 +1,18 @@
 @font-face {
-    font-family: "PT Sans" ;
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
 
-    scr: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
-}
+    }
 
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
 
+    src: url("fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
 
@@ -106,8 +106,8 @@
   }
   /* Не понимаю, как у 1 и 3 преимущества отцентрировать фото. Через 2fr 1fr?  */
 
-  .attraction-item .real-city,
-  .attraction-item .devil-bridge{
+  .attraction-item.real-city,
+  .attraction-item.devil-bridge{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -120,13 +120,6 @@
   .attraction-discription{
     text-align: center;
   }
-
-.attraction-discription .real-city,
-.attraction-discription .devil-bridge{
-    color: #FFFFFF;
-    background-color: #83B3D3;
-    text-align: center;
-}  
 
 .advantages-title{
     font-weight: 700;
@@ -216,7 +209,7 @@
     text-align: center;
     text-transform: uppercase;
 }
-
+/* Ниже крупная разметка для каталога */
 .inner-header{
     font-weight: 700;
     font-size: 60px;
