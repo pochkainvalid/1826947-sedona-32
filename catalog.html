@@ -63,6 +63,7 @@
         </li>
       </ul>
       <img  class="backgroud-picture-catalog" src="" alt="Каньон Седоны"> 
+      
       <section class="catalog-products">
         <h2 class="visually-hidden">Список критериев гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -143,17 +144,18 @@
         </form> 
         
         <!--Тут просто с помошью <p> написать "Найдено гостиниц: 38" ?-->
-      
-       <form class="sorting-type">
-        <label class="visually-hidden" for="sorting">Сортировка</label>
-        <select class="select-control" id="sorting" name="sorting">
-         <option value="cheap">Сначала дешёвые</option>
-         <option value="expensive">Сначала дорогие</option>
-         <option value="popular">Сначала популярные</option>
-       </select>
+       <div class="sorting-type">
+        <form class="sorting-container">
+         <label class="visually-hidden" for="sorting">Сортировка</label>
+         <select class="select-control" id="sorting" name="sorting">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+         </select>
+        </div>
+        <button class="visually-hidden" type="submit">Отсортировать места проживания</button>
+        </form>
 
-       <button class="visually-hidden" type="submit">Отсортировать места проживания</button>
-       </form>
        <ul class="sorting-list">
         <li class="sorting-item">
           <label class="sorting">
@@ -174,6 +176,8 @@
           </label>
         </li>
       </ul>
+    </div>
+
       <div class="catalog-bottom-column">
        <div class="livingarea-card">
          <a class="livingarea-link" href="product.html">
@@ -223,7 +227,8 @@
         </ul>
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
         <!--Показ следующих страниц с местами проживания-->
-        <ul class="pagination">
+
+        <ul class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
               <span class="visually-hidden">Предыдущая страница</span>
@@ -254,6 +259,13 @@
           </li>
         </ul>
         <p class="lvivingarea-offers">Гостиниц на странице</p>
+        <div class="sorting-type-livingarea">
+        <label class="visually-hidden" for="sorting">Колличество подходящих гостиниц на странице</label>
+        <select class="select-control" id="sorting" name="sorting">
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+        </select>
        </div>
       </section>
      </div>
