@@ -371,6 +371,13 @@ border-radius: 0px 10px 10px 0px;
     margin-left: 71px;
     color: #FFFFFF;   
 }
+
+.inner-header-title{
+    width: 528px;
+    height: 68px;
+    margin-right: auto;
+}
+
 .breanchcrumbs{
  display: flex;
  margin: 0;
@@ -435,9 +442,15 @@ border-radius: 0px 10px 10px 0px;
 }
 
 .livingarea-list{
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.livingarea-card{
+    width: 1056px;
 }
 
 .pagination-list{
