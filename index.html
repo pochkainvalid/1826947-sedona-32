@@ -47,12 +47,13 @@
 
     <main class="main-container main-index">
       <div class="page-container">
-      <h1 class="visually-hidden">Путешествие в Седону</h1>
-        <a class="welcome" href="img/welcome.svg" width="458px" height="352px" alt="Welcome to the gorgeos Sedona Because Grand Canyon sucks!"></a>
-
-
-      <p class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-      <article class="title-discription">Рассмотим 5 причин, по которым Седона круче, чем Гранд Каньон</article>
+       <div class="welcome-part">
+        <h1 class="visually-hidden">Путешествие в Седону</h1>
+        <img class="welcome" src="img/welcome.svg" alt="Welcome to the gorgeos Sedona Because Grand Canyon sucks!">
+        <img class="welcome-decoration" src="img/welcome-decoration.png">
+      </div>
+       <p class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+       <article class="title-discription">Рассмотим 5 причин, по которым Седона круче, чем Гранд Каньон</article>
       <!--Далее идет описание особенностей и преимуществ путешествия в Седону-->
       <ol class="attraction-list">
         <li class="attraction-item real-city">
@@ -111,13 +112,14 @@
 
     <footer class="page-footer">
      <div class="page-footer-container">
-       <div class="page-footer-mailing">
+       <div class="page-footer-mailing index-footer">
         <h2 class="visually-hidden">Рассылка новостей</h2>
-        <p class="page-footer-mailing-title">Подпишитесь на рассылку</p>
-        <p class="page-footer-mailing-discription">Только полезная информация и никакого спама, честное бойтскаутское!</p>
+        <p class="page-footer-mailing-title index-footer">Подпишитесь на рассылку</p>
+        <p class="page-footer-mailing-discription index-footer">Только полезная информация и никакого спама, честное бойтскаутское!</p>
+        <div class="data-fot-subscribe">
         <input type="text" name="subscribe" id="subscribe" placeholder="Ваш e-mail:">
         <button for="subscribe" class="subscribe">Подписаться</button>
-        <img class="background-theme" scr="img\background\mailing-background.jpg" alt="Фон с каньоном Седона">
+       </div>
       </div>
       <div class="page-footer-contactinfo">
        <div class="page-footer-social">
