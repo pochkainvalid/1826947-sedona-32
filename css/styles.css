@@ -19,6 +19,7 @@
  html{
     height: 100%;
  }
+
  body{
     display: flex;
     flex-direction: column;
@@ -40,8 +41,8 @@
     padding: 0;
     border: 0;
     clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+    overflow: hidden; 
+  } 
 
   .main-container{
      flex-grow: 1;
@@ -52,6 +53,7 @@
      line-height: 25px;
      width: 1200px;
      color: inherit;
+     font-weight: 700;
      background-color: inherit;
      text-decoration: none;
   }
@@ -59,13 +61,13 @@
   .navigation{
      display: flex; 
      justify-content: space-between;
-     margin: 0 auto;  
+     margin: 0 72px;  
   }
 
    .navigation-list {
      display: flex;
      flex-wrap: wrap;
-     width: 340px;  
+     align-content: center;
      margin: 0;
      padding: 0;
      list-style-type: none;
@@ -85,38 +87,33 @@
 
   }
 
-   .navigation-user {
-     max-width: 250px;
-     margin-left: auto;
-  }
-
     .navigation-user .navigation-link {
      min-width: 18px;
      min-height: 23px;
   }
 
-   .page-container {
-     width: 1200px;
-     margin: 0 auto;
-  }
 
-    .main-container{
-     padding-top: 51px;
-  }
 
     .welcome{
-     background-image: url(img\background\index-background.jpg);
-     background-color: #ffffff;
+    position: absolute;
+    color: #000000;
+    background-color: #ffffff;
+     background-image: url("img/background/index-background.jpg");
+     background-size: 100% auto;
+     background-repeat: no-repeat;
   }
 
 
     .want-here{
+      width: 160px;
       font-size: 16px;
+      padding-top: 9px;
+      padding-bottom: 10px;
       color: #FFFFFF;
       background-color: #756257;
+      border-radius: 4px;
   }
 
-  /*Правильно понимаю, что для Welcome to Sedona фото каньона лучше прописать здесь, а не в index.htiml?*/
   
   .title{
       font-weight: 700;
@@ -152,75 +149,72 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 800px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 21px;
     text-align: center;
     text-transform: uppercase; 
+    align-items: center;
   }
 
-   .advantages-list{
-       display: flex;
-       justify-content: center;
-       list-style-type: none;
-   }
-
-   
-   .advantages-title{
-    margin-top: 184px;
-    margin-bottom: 20px;
-}
-
-   .advantages-discription{
-    margin-bottom: 79px;
-    max-width: 250px;
-    max-height: 73px;
-   }
-
-  /* Не понимаю, как у 1 и 3 преимущества отцентрировать фото. Через 2fr 1fr?  */
-
-  .real-city,
-  .devil-bridge{
+   .attraction-title{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    height: 60px;
+   }
+
+   .attraction-number{
+    width: 250px;
+    height: 25px;
+}
+
+.attraction-discription{
+    width: 250px;
+    height: 73px;
+  }
+
+  .attraction-picture{
+      align-self: auto;
+  }
+
+  .real-city,
+  .devil-bridge{
     color: #FFFFFF;
     background-color: #83B3D3;
-    text-align: center;
     text-transform: uppercase; 
   }
 
-  .attraction-discription{
-    text-align: center;
+  .real-city .attraction-discription,
+  .devil-bridge .attraction-discription{
+      width: 220px;
   }
-
+   
   .advantages-list{
-      display: flex;
-  }
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 1200px;
+}
 
 .advantages-title{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    margin-top: 184px;
+    margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase; 
 }
 
-.advantages-discription{
+.advantages-discription {
     margin-bottom: 79px;
-    max-width: 250px;
-    max-height: 73px;
-   }
-
+    width: 250px;
+    height: 73px;
+}
 
 .search{
  display: flex;
  flex-direction: column;
- justify-content: center;
- align-content: center;
- width: 720px;  
- margin-bottom: 0;
+ margin: 0 auto;
+ align-items: center;
 }
 
 
@@ -228,8 +222,8 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    width: 720px;  
     text-align: center;
-    margin: 0;
     margin-top: 91px;
     margin-bottom: 15px;
     text-transform: uppercase; 
@@ -238,7 +232,7 @@
 .interect-discription{
     font-size: 22px;
     line-height: 26px;
-    margin: 0;
+    width: 720px;  
     margin-bottom: 73px;
     text-align: center;
 }
@@ -246,6 +240,7 @@
 .search-table{
     font-size: 20px;
     line-height: 36px;
+    width: 575px;  
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -253,7 +248,6 @@
     border-radius: 10px;
     padding-top: 13px;
     padding-bottom: 17px;
-    margin-bottom: 91px;
 }
 
 .page-footer-container{
@@ -264,12 +258,36 @@
     margin: 0 auto;
 }
 
+
 .page-footer-mailing{
  display: flex;
  margin: 0 auto;
  flex-direction: column;
- width: 1200px;
- background-image: url(img\background\mailing-background.jpg);
+ align-items: center;
+}
+
+.page-footer-mailing-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 94px;
+    margin-bottom: 15px;
+    width: 720px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.page-footer-mailing-discription{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 26px;
+    width: 720px;
+    height: 72px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 #subscribe{
@@ -283,30 +301,13 @@ height: 60px;
 color: #ffffff;
 background-color: #83B3D3;
 border-radius: 0px 10px 10px 0px;
-}
-
-.page-footer-mailing-title{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    margin-top: 94px;
-    margin-bottom: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.page-footer-mailing-discription{
-    font-size: 22px;
-    line-height: 26px;
-    margin-bottom: 26px;
-    text-align: center;
-    color: #FFFFFF;
+margin-bottom: 94px;
 }
 
 .page-footer-contactinfo{
  display: flex;
  justify-content: space-between;
+ 
 }
 
 .page-footer-social{
@@ -331,6 +332,7 @@ border-radius: 0px 10px 10px 0px;
     width: 720px;
     margin-top: 40px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .page-footer-developer{
@@ -362,11 +364,17 @@ border-radius: 0px 10px 10px 0px;
 
 /* Ниже крупная разметка для каталога */
 
+.page-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .inner-header{
     font-weight: 700;
     font-size: 60px;
-    line-height: 78px;
+    line-height: 77px;
     margin-top: 35px;
     margin-left: 71px;
     color: #FFFFFF;   
