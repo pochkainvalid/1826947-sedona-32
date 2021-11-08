@@ -118,6 +118,7 @@
 
     .welcome-decoration{
      margin-top: auto;
+     background-image: url(../img/welcome-decoration.png);
     }
 
     .want-here{
