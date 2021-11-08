@@ -92,6 +92,12 @@
      min-height: 23px;
   }
 
+    .look-for,
+    .favourite{
+        width: 18px;
+        height: 18px;
+    }
+
     .welcome-part{
         display: flex;
         flex-direction: column;
