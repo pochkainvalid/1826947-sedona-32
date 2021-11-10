@@ -169,7 +169,11 @@
     flex-direction: column;
     text-align: center;
     text-transform: uppercase; 
+    justify-items: center;
     align-items: center;
+    background-color: rgba(131, 179, 211, 0.12);
+    min-width: 400px;
+    height: 384px;
   }
 
    .attraction-title{
@@ -177,39 +181,115 @@
     font-size: 24px;
     line-height: 28px;
     height: 60px;
+    margin: 0;
+    margin-top: 97px;
+    margin-bottom: 25px;
    }
 
    .attraction-number{
     width: 250px;
     height: 25px;
+    margin: 0;
+    margin-bottom: 26px;
 }
 
 .attraction-discription{
     width: 250px;
     height: 73px;
+    margin: 0;
+    margin-bottom: 77px;
   }
 
   .attraction-picture{
       align-self: auto;
   }
 
-  .real-city,
+  .real-city{
+        display: grid;
+        grid-template-areas:
+            "real-title real-picture"
+            "real-number real-picture"
+            "real-discription real-picture";
+        grid-template-columns: 400px auto;
+        grid-template-rows: min-content auto min-content;
+        color: #FFFFFF;
+        background-color: #83B3D3;
+        text-transform: uppercase; 
+        justify-items: center;
+        justify-content: center;
+  }
+
+  .real-city .attraction-title{
+      grid-area: real-title;
+  }
+
+  .real-city .attraction-number{
+      grid-area: real-number;
+  }
+
+  .real-city .attraction-discription{
+      grid-area: real-discription;
+      width: 220px;
+  }
+
+  .real-city .attraction-picture{
+      grid-area: real-picture;
+  }
+  
   .devil-bridge{
+    display: grid;
+    grid-template-areas:
+        "devil-picture devil-title"
+        "devil-picture devil-number"
+        "devil-picture devil-discription";
+    grid-template-columns: auto 400px;
+    grid-template-rows: min-content auto min-content;
     color: #FFFFFF;
     background-color: #83B3D3;
     text-transform: uppercase; 
+    justify-items: center;
+    justify-content: center;
   }
 
-  .real-city .attraction-discription,
+  .devil-bridge .attraction-title{
+      grid-area: devil-title;
+  }
+
+  .devil-bridge .attraction-number{
+      grid-area: devil-number;
+  }
+
   .devil-bridge .attraction-discription{
       width: 220px;
+      grid-area: devil-discription;
+  }
+
+  .devil-bridge .attraction-picture{
+      grid-area: devil-picture;
   }
    
+  .beautiful-road{
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+
   .advantages-list{
     display: flex;
     justify-content: center;
     list-style-type: none;
     width: 1200px;
+    padding: 0;
+}
+
+.advantages-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.food{
+    background-color: #ffffff;
 }
 
 .advantages-title{
@@ -223,6 +303,7 @@
 }
 
 .advantages-discription {
+    margin: 0;
     margin-bottom: 79px;
     width: 250px;
     height: 73px;
@@ -532,12 +613,96 @@
     flex-direction: column;
     list-style-type: none;
     margin: 0;
-    margin-bottom: 71px;
     padding: 0;
 }
 
 .livingarea-card{
-    width: 1056px;
+ width: 1056px;
+ display: grid;
+ grid-template-columns: repeat(12, 80px);
+ grid-template-rows: 31px 23px auto 37px;
+ margin-bottom: 61px;
+ gap: 8px;
+ row-gap: 1px;
+}
+
+.livingarea-card-image{
+ grid-column-start: 1;
+ grid-column-end: 3;
+ grid-row-start: 1;
+ grid-row-end: -1;
+}
+
+.livingarea-card-title{
+ font-weight: 700;
+ font-size: 21px;
+ line-height: 31px;
+ grid-column-start: 4;
+ grid-column-end: 7;
+ margin: 0;
+}
+
+.livingarea-card-info{
+ grid-column-start: 4;
+ grid-column-end: 5;
+ grid-row-start: 2;
+ grid-row-end: 3;
+ margin: 0;
+}
+
+.livingarea-card-price{
+ grid-column-start: 6;
+ grid-column-end: 7;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.more-info{
+ grid-column-start: 4;
+ grid-column-end: 6;
+ grid-row-start: 4;
+ grid-row-end: 5;
+ color: #ffffff;
+ background-color: #756257;
+ align-self: center;
+ text-decoration: none;
+ text-align: center;
+ text-transform: uppercase;
+ border-radius: 4px;
+ padding-top: 9px;
+ padding-bottom: 10px;
+}
+
+.add-favourite{
+ grid-column-start: 6;
+ grid-column-end: 8;
+ grid-row-start: 4;
+ grid-row-end: 5;
+ color: #ffffff;
+ background-color: #83B3D3;
+ align-self: center;
+ text-decoration: none;
+ text-align: center;
+ text-transform: uppercase;
+ border-radius: 4px;
+ padding-top: 9px;
+ padding-bottom: 10px;
+}
+
+.livingarea-card-rating{
+ grid-column-start: 11;
+ grid-column-end: 13;
+ grid-row-start: 4;
+ grid-row-end: 5;
+ font-size: 16px;
+ text-align: center;
+ text-transform: uppercase;
+ align-self: center;
+}
+
+.livingarea-card-info,
+.livingarea-card-price{
+    line-height: 31px;
 }
 
 .pagiantion-offers{
@@ -568,6 +733,7 @@
  background-color: #83B3D3;
  border-radius: 4px;
  text-decoration: none;
+ text-align: center;
 }
 
 .pagination-current{
@@ -636,21 +802,3 @@
     width: 160px;
     height: 48px;
 }
-
-.livingarea-card-title{
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-}
-
-.livingarea-card-info,
-.livingarea-card-price{
-    line-height: 31px;
-}
-
-.livingarea-card-rating{
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
