@@ -204,6 +204,9 @@
       align-self: auto;
   }
 
+
+  /*Со строки 210 по 313 гриды преимуществ в index */
+
   .real-city{
         display: grid;
         grid-template-areas:
@@ -615,6 +618,8 @@
     margin: 0;
     padding: 0;
 }
+
+/*Cо строки 621 по 708 грид для каталога */
 
 .livingarea-card{
  width: 1056px;
