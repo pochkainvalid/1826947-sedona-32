@@ -101,6 +101,21 @@
         min-width: 18px;
         min-height: 19px;
     }
+
+    .navigation-icon-like{
+     width: 19px;
+     height: 19px;
+     font-size: 10px;
+     line-height: 13px;
+     color: #ffffff;
+     background-color: #7DB54F;
+     position: absolute;
+     border-radius: 40%;
+     left: 77.42%;
+     right: 21%;
+     top: 24.29%;
+     bottom: 57.14%;
+    }
    
     .welcome-part{
         display: flex;
