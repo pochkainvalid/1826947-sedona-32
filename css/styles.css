@@ -549,6 +549,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    font-style: normal;
 }
 
 .footer-developer-link{
@@ -696,13 +697,51 @@ line-height: 78px;
 
 .sorting-list{
     display: flex;
-
+    list-style-type: none;
+    padding: 0;
 }
 
 .sorting-item{
+ display: inline-block;
  width: 48px; 
  height: 48px;
  margin-bottom: 42px;
+}
+
+.icons{
+ position: absolute;
+ background-image: url("../img/model/mode-tile.svg");
+ background-repeat: no-repeat;
+ background-position: center;
+ border: 2px solid #000000;
+ box-sizing: border-box;
+ border-radius: 4px;
+ width: 48px;
+ height: 48px;
+}
+
+.icons-with-a-signature{
+ position: absolute;
+ background-image: url("../img/model/mode-slideshow.svg");
+ background-repeat: no-repeat;
+ background-position: center;
+ border: 2px solid #000000;
+ box-sizing: border-box;
+ border-radius: 4px;
+ width: 48px;
+ height: 48px;
+}
+
+.list{
+ position: absolute;
+ background-image: url("../img/model/mode-list.svg");
+ background-repeat: no-repeat;
+ background-position: center;
+ border: 2px solid #000000;
+box-sizing: border-box;
+border-radius: 4px;
+width: 48px;
+height: 48px;
 }
 
 .livingarea-list{
