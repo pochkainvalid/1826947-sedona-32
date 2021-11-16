@@ -588,6 +588,8 @@
  margin-top: 35px;
  margin-bottom: 5px;
  margin-left: 71px;
+ font-size: 60px;
+line-height: 78px;
 }
 
 .breanchcrumbs{
@@ -632,6 +634,10 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
 }
 
 .catalog-filter-list{
@@ -653,6 +659,17 @@
     align-items: center;
 }
 
+.catalog-filter-label {
+    background-color: inherit;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+}
+
+.catalog-filter-input{
+    background-color: inherit;
+}
+
 .control-label{
     line-height: 23px;
     color: #FFFFFF;
@@ -662,15 +679,19 @@
 .sorting-results{
  display: flex;
  justify-content: space-between;
+ align-items: center;
+}
+
+.search-results{
+ font-size: 30px;
+ line-height: 39px;
+ font-weight: 700;
+ text-transform: uppercase;
 }
 
 .sorting-container {
     display: flex;
     margin-bottom: 42px;
-    padding-top: 12px; 
-    padding-bottom: 13px;
-    padding-left: 19px;
-    padding-right: 127px;
 }
 
 .sorting-list{
@@ -796,11 +817,6 @@
     list-style-type: none;
 }
 
-.livingarea-card-image{
-    width: 180px;
-    height: 120px;
-}
-
 .pagination-item:not(:last-child){
     margin-right: 8px;
 }
@@ -833,18 +849,6 @@
     display: flex;
 }
 
-.catalog-filter-title{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    color: #FFFFFF;
-}
-
-.catalog-filter-label{
-    background-color: inherit;
-    border: 2px solid #ffffff;
-    border-radius: 4px;
-}
 
 .button.apply{
     font-weight: 700;
@@ -888,6 +892,6 @@
 
 .select-control{
     line-height: 23px;
-    width: 160px;
+    width: 287px;
     height: 48px;
 }
