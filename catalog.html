@@ -22,14 +22,20 @@
         <img class="page-header-logo" src="img/sedona-logo.svg" alt="Логотип города Седона" width="138" height="70"> 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item look-for">
-            <a class="navigation-item" href="#">
+            <a class="navigation-link" href="#" >
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="19" xmlns="http://www.w3.org/2000/svg">>
+                <path d="m18 16.5-3.7-3.7A8 8 0 0 0 8-.1C3.6-.1 0 3.6 0 8a8 8 0 0 0 12.9 6.3l3.7 3.7 1.4-1.5ZM8 14a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6Z" fill="#000"/>
+              </svg>
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link favourite" href="#">
+          <li class="navigation-item favourite">
+            <a class="navigation-link" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
+              </svg>
               <span class="visually-hidden">
                 Избранные Гостиницы
               </span>
@@ -44,7 +50,7 @@
 
 
     <main class="main-container main-inner">
-     <div class="page-container">
+     <div class="page-container-catalog">
      <header class="inner-header">
       <p class="inner-header-title">Гостиницы Седоны</p>
       <ul class="breanchcrumbs">
@@ -65,7 +71,7 @@
         <h2 class="visually-hidden">Список критериев гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура</legend>
+            <legend class="catalog-filter-title">Инфраструктура :</legend>
             <ul class="catalog-filter-list">
              <li class="catalog-filter-item">
               <label class="control">
@@ -92,7 +98,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья</legend>
+            <legend class="catalog-filter-title">Тип жилья :</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                <label class="control">
@@ -119,7 +125,7 @@
           </fieldset>
           
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, ₽</legend>
+            <legend class="catalog-filter-title">Стоимость, ₽ :</legend>
             <button class="range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену
               </span>
