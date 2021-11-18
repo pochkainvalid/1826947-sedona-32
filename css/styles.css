@@ -791,7 +791,7 @@ body {
 
 .breanchcrumbs-link::before{
   content: "";
-  background-image: url("../img/.breanchcrumbs-cursor.svg");
+  background-image: url("../img/breanchcrumbs-cursor.svg");
 }
 
 .catalog-products {
@@ -897,7 +897,7 @@ body {
   background-image: url("../img/model/mode-tile.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #000000;
+  border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
   width: 48px;
@@ -909,7 +909,7 @@ body {
   background-image: url("../img/model/mode-slideshow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #000000;
+  border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
   width: 48px;
@@ -921,11 +921,35 @@ body {
   background-image: url("../img/model/mode-list.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #000000;
+  border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
   width: 48px;
   height: 48px;
+}
+
+.sorting-input-current{
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sorting-item:hover{
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sorting-item:focus{
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sorting-item::before{
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .livingarea-list {
@@ -966,6 +990,18 @@ body {
   height: 120px;
 }
 
+.livingarea-card-image:hover {
+  opacity: 0.6;
+}
+
+.livingarea-card-image:active {
+  opacity: 0.3;
+}
+
+.livingarea-card-image:focus {
+  border: 3px solid #83B3D3;
+}
+
 .livingarea-card-title {
   font-size: 24px;
   line-height: 31px;
@@ -974,6 +1010,23 @@ body {
   grid-column-start: 4;
   grid-column-end: 7;
   margin: 0;
+}
+
+.livingarea-card-title:hover {
+  color: #756257;
+}
+
+.livingarea-card-title:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.livingarea-card-title:focus {
+  color: #756257;
+  padding: 10px;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .livingarea-card-info {
@@ -1008,6 +1061,23 @@ body {
   padding-bottom: 10px;
 }
 
+.more-info:hover {
+  background-color: #615048;
+  border-radius: 4px;
+}
+
+.more-info:active {
+  background-color: #615048;
+  border-radius: 4px;
+  opacity: 0.3;
+}
+
+.more-info:focus {
+  background-color: #615048;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
 .add-favourite {
   grid-column-start: 6;
   grid-column-end: 8;
@@ -1022,6 +1092,56 @@ body {
   border-radius: 4px;
   padding-top: 9px;
   padding-bottom: 10px;
+}
+
+.add-favourite:hover {
+  background-color: #68A2CA;
+border-radius: 4px;
+}
+
+.add-favourite:active {
+  background-color: #68A2CA;
+  border-radius: 4px;
+  opacity: 0.3;
+}
+
+.add-favourite:focus {
+  background-color: #68A2CA;
+  border: 3px solid #756257;
+  border-radius: 4px
+}
+
+.in-favourite {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 4;
+   grid-row-end: 5;
+  color: #ffffff;
+  background-color: #7DB54F;
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.in-favourite:hover {
+  background-color: #6C9E42;
+border-radius: 4px;
+}
+
+.in-favouritee:active {
+  background-color: #6C9E42;
+  border-radius: 4px;
+  opacity: 0.3;
+}
+
+.in-favourite:focus {
+  background-color: #6C9E42;
+  border: 3px solid #756257;
+  border-radius: 4px
 }
 
 .livingarea-card-stars {
@@ -1109,6 +1229,22 @@ body {
   text-align: center;
 }
 
+.pagination-link:hover {
+  background-color: #68A2CA;
+  border-radius: 4px;
+}
+
+.pagination-link:active {
+  background-color: #68A2CA;
+  opacity: 0.3;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+  border: 3px solid #756257;
+  border-radius: 4px;
+}
+
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
@@ -1139,6 +1275,21 @@ body {
   border: 0; 
 }
 
+.button.apply:hover{
+  background-color: #68A2CA;
+  border-radius: 4px;
+}
+
+.button.apply:active{
+  opacity: 0.3;
+}
+
+.button.apply:focus{
+  background-color: #68A2CA;
+  border: 3px solid #FFFFFF;
+  border-radius: 4px;
+}
+
 .button.cancel {
   line-height: 23px;
   text-align: center;
@@ -1147,6 +1298,22 @@ body {
   color: #ffffff;
   background-color: inherit;
   border: 0;
+}
+
+.button.cancel:hover {
+  opacity: 0.6;
+}
+
+.button.cancel:active{
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.button.cancel:focus{
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .button.pagination-show-more {
@@ -1163,6 +1330,9 @@ body {
   border-radius: 4px;
   border: 0;
   margin-bottom: 61px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .button.pagination-show-more::before {
@@ -1173,6 +1343,22 @@ body {
   border: 1px solid #E6E6E6;
   transform: rotate(180deg);
   top: 1305px;
+}
+
+.button.pagination-show-more:hover {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.button.pagination-show-more:active{
+  opacity: 0.3;
+}
+
+.button.pagination-show-more:focus{
+  border: inherit;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .select-control {
@@ -1208,6 +1394,7 @@ body {
   position: absolute;
   width: 100%;
   height: 0px;
+
   border: 2px solid #756257;
   top: 66px;
 }
