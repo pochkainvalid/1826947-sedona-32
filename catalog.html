@@ -86,7 +86,7 @@
               </div>
             </div>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item want-here">
             <a class="navigation-link want-here" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -170,7 +170,7 @@
             </fieldset>
           
             <fieldset class="catalog-filter-group price-group">
-              <legend class="catalog-filter-title">Стоимость, ₽ :</legend>
+              <legend class="catalog-filter-title catalog-filter-title-moneycost">Стоимость, ₽ :</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
@@ -422,13 +422,25 @@
           <form class="people-count elders">
             <label >
               <span class="people-count-title">Взрослые:</span>
+              <button class="modal-button less" type="button">
+                <span class="visually-hidden">Изменить минимальную цену</span>
+              </button>
               <input type="number" class="counter" step="1" min="1" max="5" value="1" name="elders"/>
+              <button class="modal-button more" type="button">
+                <span class="visually-hidden">Изменить максимальную цену</span>
+              </button>
             </label>
           </form>
           <form class="people-count young">
             <label >
               <span class="people-count-title">Дети:</span>
-              <input type="number" class="counter" step="1" min="0" max="5" value="1" name="young"/>
+              <button class="modal-button less" type="button">
+                <span class="visually-hidden">Изменить минимальную цену</span>
+              </button>
+              <input type="number" class="counter" step="1" min="0" max="5" value="0" name="young"/>
+              <button class="more" type="button">
+                <span class="modal-button visually-hidden">Изменить максимальную цену</span>
+              </button>
             </label>
           </form>
           </div>

@@ -86,7 +86,7 @@
               </div>
             </div>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item want-here">
             <a class="navigation-link want-here" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -99,14 +99,14 @@
           <h1 class="visually-hidden">Путешествие в Седону</h1>
           <img class="welcome" src="img/welcome.svg" alt="Welcome to the gorgeos Sedona Because Grand Canyon sucks!">
         </div>
-        <h2 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="title-discription">Рассмотим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+          <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="title-discription">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <!--Далее идет описание особенностей и преимуществ путешествия в Седону-->
         <ol class="attraction-list">
           <li class="attraction-item real-city">
             <p class="attraction-title">Настоящий <br> городок</p>
             <p class="attraction-number ">— №1 —</p>
-            <p class="attraction-discription">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="attraction-discription">Седона — не аттракцион<br> для туристов, там течёт<br> своя жизнь</p>
             <img class="attraction-picture" src="img/sedona-real-city.jpg" alt="Город Седона">
           </li>
           <li>
@@ -114,15 +114,15 @@
               <ul class="advantages-list">
                 <li class="advantages-item living">
                   <h3 class="advantages-title">ЖИЛЬЁ</h3>
-                  <p class="advantages-discription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <p class="advantages-discription">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
                 </li>
                 <li class="advantages-item food">
                   <h3 class="advantages-title">ЕДA</h3>
-                  <p class="advantages-discription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="advantages-discription">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="advantages-item souvenirs">
                   <h3 class="advantages-title souvenirs">СУВЕНИРЫ</h3>
-                  <p class="advantages-discription">Не только китайского, но и настоящего местного производства!</p>
+                  <p class="advantages-discription">Не только китайского,<br> но и настоящего местного производства!</p>
                 </li>
               </ul>
             </section>
@@ -150,7 +150,7 @@
         </ol>
         <section class="search">
           <h2 class="interect-title">Заинтересовались?</h2>
-          <p class="interect-discription">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="interect-discription">Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button type="button" class="search-table">Поиск гостиницы в Седоне</button>
         </section>
       </div>
@@ -161,7 +161,7 @@
         <div class="page-footer-mailing index-footer">
           <h2 class="visually-hidden">Рассылка новостей</h2>
           <p class="page-footer-mailing-title index-footer">Подпишитесь на рассылку</p>
-          <p class="page-footer-mailing-discription index-footer">Только полезная информация и никакого спама, честное бойтскаутское!</p>
+          <p class="page-footer-mailing-discription index-footer">Только полезная информация и никакого спама,<br> честное бойтскаутское!</p>
           <form class="data-foot-subscribe" action="https://echo.htmlacademy.ru/" method="get">
             <input type="email" name="subscribe" id="subscribe" class="place-for-email" required placeholder="Ваш e-mail">
             <button type="submit" class="subscribe">Подписаться</button>
@@ -221,18 +221,30 @@
             </label>
           </form>
           <div class="count">
-          <form class="people-count elders">
-            <label >
-              <span class="people-count-title">Взрослые:</span>
-              <input type="number" class="counter" step="1" min="1" max="5" value="1" name="elders"/>
-            </label>
-          </form>
-          <form class="people-count young">
-            <label >
-              <span class="people-count-title">Дети:</span>
-              <input type="number" class="counter" step="1" min="0" max="5" value="1" name="young"/>
-            </label>
-          </form>
+            <form class="people-count elders">
+              <label >
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <span class="people-count-title">Взрослые:</span>
+                <input type="number" class="counter" step="1" min="1" max="5" value="1" name="elders"/>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+              </label>
+            </form>
+            <form class="people-count young">
+              <label >
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <span class="people-count-title">Дети:</span>
+                <input type="number" class="counter" step="1" min="0" max="5" value="0" name="young"/>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+              </label>
+            </form>
           </div>
           <button type="submit" class="find-by-date">
             <span class="find-by-date-title">Найти</span> 
